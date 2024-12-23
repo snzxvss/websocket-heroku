@@ -3,8 +3,6 @@ import readline from 'readline';
 
 const ws = new WebSocket('wss://websoc-f13286b693d6.herokuapp.com/');
 
-let lastMessageLength = 0;
-
 ws.on('open', () => {
     console.log('Conectado al servidor WebSocket');
     rl.prompt();
